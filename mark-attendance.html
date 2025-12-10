@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Mark Attendance</h2>
+
+    <p>Date: <b id="date"></b></p>
+
+    <button class="btn" onclick="mark()">Mark Present</button>
+
+    <p id="msg"></p>
+
+    <a href="student-dashboard.html" class="link">Back</a>
+</div>
+
+<script>
+    document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+
+    function mark() {
+        document.getElementById("msg").innerHTML = 
+        "<span style='color:green;font-weight:bold;'>Attendance Marked Successfully ✔</span>";
+    }
+</script>
+
+</body>
+</html>
